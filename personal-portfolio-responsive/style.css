@@ -198,6 +198,8 @@
 }
 
 .contact h1{
+    font-size: 5rem;
+    font-size: bold;
     letter-spacing: 10px;
     margin-bottom: 20px;
 }
@@ -206,6 +208,36 @@ form label, form input{
     margin-bottom: 30px;
 }
 
+/* -------------------- */
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    background-color: #252525;
+    min-height: 10vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 30px;
+}
+
+.footer .copyright{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.footer .social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .social-media a{
+    text-decoration: none;
+    color: white;
+}
 
 
 @media (max-width: 768px ) {

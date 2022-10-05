@@ -190,6 +190,7 @@
 /* Contact */
 
 .contact{
+    padding: 50px;
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -272,7 +273,7 @@ form label, form input{
     }
 }
 
-@media (max-width: 420px ) {
+@media (max-width: 500px ) {
     .about .container .left{
         width: 250px;
         margin-top: -50px;
@@ -289,6 +290,21 @@ form label, form input{
 
     .social-media{
         margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 400px){
+    .contact h1{
+        font-size: 3rem;
+    }
+
+    .contact-form{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .contact-description{
+        padding: 30px;
     }
 }
 

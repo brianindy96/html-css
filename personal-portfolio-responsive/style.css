@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 *{
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -69,6 +70,12 @@
     border: 1px solid blue;
     margin-top: 1.2em;
     padding: 0.5em;
+    border-radius: 10px;
+    transition: 0.03s ease;
+}
+
+.left a:hover{
+    transform: scale(1.1);
 }
 
 /* ------------------- */
@@ -90,11 +97,12 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,450px));
+    grid-template-columns: repeat(auto-fit,minmax(250px,450px));
     margin-top: 20px;
     grid-gap: 70px;
     padding: 30px;
     transition: 0.3s;
+    padding-bottom: 50px;
 }
 
 /* ------------------------ */
@@ -176,6 +184,26 @@
 
 #card-five{
     background-image: url('./socialmedia.jpg')
+}
+
+/* ------------------------------ */
+/* Contact */
+
+.contact{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h1{
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+form label, form input{
+    margin-bottom: 30px;
 }
 
 

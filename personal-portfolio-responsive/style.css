@@ -77,9 +77,11 @@
 
 .portfolio{
     min-height: 100vh;
-    background-color: rgb(255, 227, 162);
+    background-color: #252525;
     text-align: center;
     padding: 20px;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .portfolio .port-container{
@@ -88,15 +90,95 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,450px));
+    grid-template-columns: repeat(auto-fill,minmax(250px,450px));
     margin-top: 20px;
-    grid-gap: 50px;
+    grid-gap: 70px;
     padding: 30px;
+    transition: 0.3s;
 }
+
+/* ------------------------ */
+/* Card */
 .card{
     min-height: 400px;
     border: 1px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* Set content in mid */
+    padding: 10rem 0 0;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    box-shadow: 8px 8px 24px -6px rgb(252, 21, 21);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-content{
+    height: 300px;
+    padding: 1.5em;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    transform: translateY(75%);
+    transition: transform 0.5s ease;
+}
+
+.card-content:hover{
+    transform: translateY(10%);
+    background: rgba(0,0,0,0.8);
+}
+
+.card-title{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card-body{
+    margin-bottom: 30px;
+}
+
+.card-content a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-content a:hover{
+    border: 1px solid red;
+    color: red;
+}
+
+#card-one{
+    background-image: url("./blacksands.png");
+}
+
+#card-two{
+    background-image: url("https://cdn.dribbble.com/userupload/3731029/file/original-b6736baa9e3ffcd4c17228f52aacd7f7.png?compress=1&resize=752x");
+}
+
+#card-three{
+    background-image: url("./todoapp.jpg");
+}
+
+#card-four{
+    background-image: url('./weather-app.jpg')
+}
+
+#card-six{
+    background-image: url('./crypto-app-4.png')
+}
+
+#card-five{
+    background-image: url('./socialmedia.jpg')
+}
+
+
 
 @media (max-width: 768px ) {
     .about .container{
@@ -109,7 +191,6 @@
     .about .container .left{
         text-align: center;
         width: 60%;
-        transition: 0.5s all;
         margin: 0;     
         margin-top: -150px;   
         margin-bottom: 50px;

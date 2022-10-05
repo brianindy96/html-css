@@ -204,6 +204,15 @@
     margin-bottom: 20px;
 }
 
+.contact .submitBtn{
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
 form label, form input{
     margin-bottom: 30px;
 }
@@ -272,6 +281,14 @@ form label, form input{
 
     .about .container .right{
         min-width: 280px;
+    }
+
+    .social-media i{
+        margin-left: 10px;
+    }
+
+    .social-media{
+        margin-bottom: 12px;
     }
 }
 

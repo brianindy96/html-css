@@ -51,11 +51,11 @@
 
     <script>
 
-        let tl = gsap.timeline();
+        let tl = gsap.timeline({ defaults: { ease: "Expo.easeOut"}});
 
         tl.from('.bg', {
             scale: 0.6,
-            duration: 1.5,
+            duration: 2,
             opacity: 0,
         })
     </script>

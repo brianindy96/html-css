@@ -63,8 +63,9 @@ svg {
 .locations-container .info .title {
   font-size: 2rem;
   margin-top: -5.5em;
-  margin-bottom: 2.5em;
+  margin-bottom: 4em;
   font-weight: bold;
+  color: white;
 }
 .locations-container .info .title span {
   display: block;

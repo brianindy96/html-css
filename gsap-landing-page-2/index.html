@@ -28,21 +28,21 @@
         <div class="local">
             <img src="./img/iceland1.jpg" alt="Sand and ocean">
             <div class="info">
-                <p class="title">Los<span>Alacos</span></p>
+                <p class="title">Gullfoss</p>
                 <p>Pellentesque aliquam et fermentum odio ultricies nibh dolor massa. Malesuada magna amet suscipit netus nisl ullamcorper.</p>
             </div>
         </div>
         <div class="local">
             <img src="./img/iceland2.jpg" alt="Sand and ocean">
             <div class="info">
-                <p class="title">Los<span>Alacos</span></p>
+                <p class="title">Vestrahorn</p>
                 <p>Pellentesque aliquam et fermentum odio ultricies nibh dolor massa. Malesuada magna amet suscipit netus nisl ullamcorper.</p>
             </div>
         </div>
         <div class="local">
             <img src="./img/iceland3.jpg" alt="Sand and ocean">
             <div class="info">
-                <p class="title">Los<span>Alacos</span></p>
+                <p class="title">Skogafoss</p>
                 <p>Pellentesque aliquam et fermentum odio ultricies nibh dolor massa. Malesuada magna amet suscipit netus nisl ullamcorper.</p>
             </div>
         </div>
@@ -51,13 +51,39 @@
 
     <script>
 
+        // one can set default for every tl like as follows:
         let tl = gsap.timeline({ defaults: { ease: "Expo.easeOut"}});
 
         tl.from('.bg', {
             scale: 0.6,
             duration: 2,
             opacity: 0,
+            delay: 0.2,
         })
+        .to('.text-reveal', {
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            y: 0,
+            // stagger makes all the latter goes .3 seconds after
+            stagger: .3,
+            duration: 0.3,
+
+        }, "-=2.9")
+        .to('.text-reveal', {
+            clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+            y: -200,
+            // stagger makes all the latter goes .3 seconds after
+            duration: .1,
+            delay: .3
+        })
+        .to('.text-reveal', { 
+            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', 
+            stagger: .3, 
+            duration: .2, 
+            delay: .5,
+        })
+        .to('svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: -150 })
+        .to('.local', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',y: 0, stagger: .3, opacity: 1, duration: 1}, "-=1.4" )
+    
     </script>
 </body>
 </html>

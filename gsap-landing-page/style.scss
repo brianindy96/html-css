@@ -48,9 +48,12 @@ body{
                 letter-spacing: 2px;
                 border: 2px solid #fff;
                 font-size: 14px;
+                transition: 0.1s ease;
+
                 &:focus{
                     outline: none;
                 }
+
             }
     .overlay2{
         position: absolute;

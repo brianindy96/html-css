@@ -9,5 +9,12 @@ header{
 h1{
     font-size: 7rem;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: "Bebas Neue";
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 5.9rem;
+}
+
+.char{
+    transform: translateY(125px);
+    transition: transform 0.05s;
 }

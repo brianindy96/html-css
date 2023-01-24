@@ -30,6 +30,18 @@ $(document).ready(function() {
             ease: "expo.easeInOut",
         })
 
+        gsap.from(".overlay3 .content h2", 1.8, {
+            y: 100,
+            opacity: 0,
+            delay: 2,
+        })
+
+        gsap.from(".overlay3 .content p", 1.8, {
+            y: 100,
+            opacity: 0,
+            delay: 2.5,
+        })
+
     })
 
     $('.overlay1Btn').hover(function(){gsap.to(".overlay1Btn", 0.1, {scale: 1.1})}, function(){gsap.to(".overlay1Btn", 0.1, {scale: 1})})

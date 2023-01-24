@@ -34,12 +34,13 @@ body{
             text-transform: uppercase;
             font-weight: 700;
             color: white;
-            opacity: 0.7;
+            opacity: 0.4;
         }
 
             .overlay1Btn{
                 @include centerView();
                 font-size: 15vw;
+                background: none;
                 text-transform: uppercase;
                 font-weight: 700;
                 color: #fff;

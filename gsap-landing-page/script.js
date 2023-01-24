@@ -16,11 +16,20 @@ $(document).ready(function() {
             ease: "power2.out",
         })
 
+        // delay means start 1 second after the first one
         gsap.to(".overlay1", 1, {
             top: "-110%",
             delay: 1,
             ease: "expo.easeInOut",
         })
+
+        // delay means start 2 second after the first one
+        gsap.to(".overlay2", 1, {
+            top: "-110%",
+            delay: 1.5,
+            ease: "expo.easeInOut",
+        })
+
     })
 
     $('.overlay1Btn').hover(function(){gsap.to(".overlay1Btn", 0.1, {scale: 1.1})}, function(){gsap.to(".overlay1Btn", 0.1, {scale: 1})})

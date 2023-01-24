@@ -15,10 +15,15 @@ $(document).ready(function() {
             delay: 0.5,
             ease: "power2.out",
         })
+
+        gsap.to(".overlay1", 1, {
+            top: "-110%",
+            delay: 1,
+            ease: "expo.easeInOut",
+        })
     })
 
     $('.overlay1Btn').hover(function(){gsap.to(".overlay1Btn", 0.1, {scale: 1.1})}, function(){gsap.to(".overlay1Btn", 0.1, {scale: 1})})
-
 
     
 })

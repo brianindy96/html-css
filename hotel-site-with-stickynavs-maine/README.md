@@ -11,6 +11,7 @@ Reflections:
 
 3. In the next project, I'll add in more interesting Javascripts for my website. Probably will get inspired from other Developer's work first, and try to implement it into my Project as much as I can (without copying and paste the code and learning nothing from it.)
 
+![image](https://user-images.githubusercontent.com/80921901/223028571-06278206-f13c-4440-b3a2-b4986248052d.png)
 
 Credits: 
 
